@@ -7,8 +7,8 @@ const FinancialModellingApp = () => {
     const [App, setApp] = React.useState(null);
     
     React.useEffect(() => {
-        // Dynamic import of the actual app
-        import('../../../FinancialModelling/frontend/src/App')
+        // Dynamic import using the symlinked path
+        import('../../external-projects/financial-modelling/App')
             .then(module => {
                 setApp(() => module.default);
             })

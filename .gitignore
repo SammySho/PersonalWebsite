@@ -64,3 +64,11 @@ env/
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Ignore symlinked external projects
+src/external-projects/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
