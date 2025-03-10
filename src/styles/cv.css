@@ -1,0 +1,74 @@
+/* CV styles */
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section-title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.cv-entry {
+  margin-bottom: 1.5rem;
+}
+
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.cv-entry-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #34495e;
+  margin: 0;
+}
+
+.cv-entry-subtitle {
+  font-size: 1.1rem;
+  color: #3498db;
+  margin: 0;
+}
+
+.cv-entry-date {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.cv-entry-content {
+  margin-left: 1rem;
+}
+
+.cv-entry-content ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.cv-entry-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.cv-skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-skills-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+} 

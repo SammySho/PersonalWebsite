@@ -2,9 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Education from './pages/Education';
-import Experience from './pages/Experience';
-import Interests from './pages/Interests';
+import Cv from './pages/Cv';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 
@@ -14,9 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/interests" element={<Interests />} />
+        <Route path="/cv" element={<Cv />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
