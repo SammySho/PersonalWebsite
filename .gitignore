@@ -49,15 +49,6 @@ env/
 *.swp
 *.swo
 
-# Large media files
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.mp4
-*.mov
-*.avi
-
 # Ignore notebooks
 *.ipynb
 
