@@ -2,23 +2,16 @@ import React from 'react';
 import ProjectCard from '../components/ProjectCard';
 import './Projects.css';
 
-// Import components from submodules
-import TradingDashboard from '../../trading-dashboard/src/App';
-import FinancialModelling from '../../financial-modelling/src/App';
+// Import components from FinancialModelling
+import FinancialModellingApp from '../project-modules/FinancialModelling/App';
 
 const Projects = () => {
     const projects = [
         {
-            title: 'Trading Dashboard',
-            description: 'A real-time trading dashboard with market analysis tools and portfolio tracking.',
-            thumbnail: '/images/trading-dashboard-thumb.jpg', // You'll need to add this image
-            component: TradingDashboard
-        },
-        {
             title: 'Financial Modelling',
-            description: 'Advanced financial modelling tools for investment analysis and decision making.',
-            thumbnail: '/images/financial-modelling-thumb.jpg', // You'll need to add this image
-            component: FinancialModelling
+            description: 'Advanced financial modelling tools for investment analysis and decision making, featuring backtesting capabilities and strategy visualization.',
+            thumbnail: '/images/financial-modelling-thumb.jpg',
+            component: FinancialModellingApp
         },
         // Add more projects as needed
     ];
