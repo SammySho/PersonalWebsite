@@ -4,7 +4,7 @@ import '../../styles/cv.css';
 const Experience = () => {
   return (
     <section className="cv-section">
-      <h2 className="cv-section-title">RELEVANT EXPERIENCE</h2>
+      <h2 className="cv-section-title">EXPERIENCE</h2>
       
       <div className="cv-entry">
         <div className="cv-entry-header">

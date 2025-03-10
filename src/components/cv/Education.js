@@ -9,16 +9,16 @@ const Education = () => {
       <div className="cv-entry">
         <div className="cv-entry-header">
           <div>
-            <h3 className="cv-entry-title">Ph.D. in Digital Health and Care</h3>
+            <h3 className="cv-entry-title">Ph.D. - Department of Engineering Mathematics</h3>
             <h4 className="cv-entry-subtitle">UNIVERSITY OF BRISTOL</h4>
           </div>
           <span className="cv-entry-date">09/2021 – present</span>
         </div>
         <div className="cv-entry-content">
           <ul>
-            <li>Research has involved building a biological and computational model for understanding precision medicine in chemotherapy drugs and ovarian cancer.</li>
-            <li>Currently applying computer vision models to understand early-stage brain development through organoids.</li>
-            <li>Building software and applications to enable faster data annotation, model generation, and conclusions.</li>
+            <li>Created a computer vision pipeline for the predictive modelling of chemotherapy drugs and patient-derived ovarian cancer organoids.</li>
+            <li>Main body of work focused on the development of predictive models of brain organoid development using computer vision and deep learning.</li>
+            <li>Built software and applications to enable novel approaches for faster data annotation, model generation, and conclusions.</li>
           </ul>
         </div>
       </div>
