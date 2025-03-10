@@ -1,49 +1,44 @@
 import React from 'react';
-import '../styles/global.css';
-import { FaGithub, FaEllipsisH } from 'react-icons/fa';
+import ProjectCard from '../components/ProjectCard';
+import './Projects.css';
 
-const projectsData = [
-  {
-    title: 'Mineral Deep Dive',
-    description: 'A weather application that displays current weather and forecasts using external APIs.',
-    technologies: ['React', 'OpenWeather API', 'Chart.js'],
-    github: 'https://github.com/SammySho/MineralDeepDive',
-    live: 'https://sammyshorthouse.com/MineralDeepDive',
-  },
-  {
-    title: 'Trading Strategy Dashboard',
-    description: 'A CI/CD dashboard to visualise trading strategies, select signals and backtest them to predict performance.',
-    technologies: ['Node.js', 'PostgreSQL', 'React', 'AWS', 'Python'],
-    github: 'https://github.com/SammySho/FinancialModelling',
-    live: 'https://trading.sammyshorthouse.com',
-  }
-];
+// Import components from submodules
+import TradingDashboard from '../../trading-dashboard/src/App';
+import FinancialModelling from '../../financial-modelling/src/App';
 
 const Projects = () => {
-  return (
-    <div className="container">
-      <h1>Projects</h1>
-      <p>Here are some projects I have worked on:</p>
-      
-      <div className="projects-grid">
-        {projectsData.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <p><strong>Technologies:</strong> {project.technologies.join(', ')}</p>
-            <div className="links">
-              <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub /> GitHub
-              </a>
-              <a href={project.live} target="_blank" rel="noopener noreferrer">
-                <FaEllipsisH /> Explore Project
-              </a>
+    const projects = [
+        {
+            title: 'Trading Dashboard',
+            description: 'A real-time trading dashboard with market analysis tools and portfolio tracking.',
+            thumbnail: '/images/trading-dashboard-thumb.jpg', // You'll need to add this image
+            component: TradingDashboard
+        },
+        {
+            title: 'Financial Modelling',
+            description: 'Advanced financial modelling tools for investment analysis and decision making.',
+            thumbnail: '/images/financial-modelling-thumb.jpg', // You'll need to add this image
+            component: FinancialModelling
+        },
+        // Add more projects as needed
+    ];
+
+    return (
+        <div className="projects-container">
+            <h1>Projects</h1>
+            <div className="projects-grid">
+                {projects.map((project, index) => (
+                    <ProjectCard
+                        key={index}
+                        title={project.title}
+                        description={project.description}
+                        thumbnail={project.thumbnail}
+                        component={project.component}
+                    />
+                ))}
             </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default Projects;
