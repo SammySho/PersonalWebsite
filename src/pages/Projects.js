@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import './Projects.css';
 
 // Import components from FinancialModelling
-import FinancialModellingApp from '../project-modules/FinancialModelling/App';
+import FinancialModellingApp from '../modules/financial-modelling';
 
 const Projects = () => {
     const projects = [

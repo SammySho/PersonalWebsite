@@ -18,7 +18,7 @@ const Home = () => {
           <a href="https://github.com/SammySho" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/sammyshorthouse" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/sammy-shorthouse/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
         </div>
