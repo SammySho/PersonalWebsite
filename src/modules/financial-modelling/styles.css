@@ -1,5 +1,8 @@
 .financial-modelling-wrapper {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -7,4 +10,28 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Override any container width restrictions from the original app */
+.container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Ensure charts and data visualizations expand properly */
+.recharts-wrapper,
+.recharts-surface {
+    width: 100% !important;
+    height: auto !important;
 } 

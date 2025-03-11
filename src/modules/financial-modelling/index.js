@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
 
 // Re-export the components we need
 const FinancialModellingApp = () => {
-    // We'll dynamically import the app to avoid the CRA restriction
     const [App, setApp] = React.useState(null);
     
-    React.useEffect(() => {
+    useEffect(() => {
         // Dynamic import using the symlinked path
         import('../../external-projects/financial-modelling/App')
             .then(module => {
@@ -18,7 +17,11 @@ const FinancialModellingApp = () => {
     }, []);
 
     if (!App) {
-        return <div>Loading Financial Modelling Dashboard...</div>;
+        return (
+            <div className="financial-modelling-wrapper">
+                <div className="loading">Loading Financial Modelling Dashboard...</div>
+            </div>
+        );
     }
 
     return (

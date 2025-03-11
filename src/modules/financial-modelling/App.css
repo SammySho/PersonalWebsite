@@ -1,0 +1,15 @@
+.financial-modelling-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Override any container width restrictions from the original app */
+.container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+} 

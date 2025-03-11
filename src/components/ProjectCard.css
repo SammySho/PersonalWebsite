@@ -89,7 +89,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: #f5f7fa;
     display: flex;
     flex-direction: column;
     animation: slideIn 0.3s ease forwards;
@@ -144,9 +144,28 @@
 .project-window-content {
     flex: 1;
     overflow-y: auto;
-    padding: 24px;
+    padding: 32px;
     height: calc(100vh - 70px);
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f5f7fa;
+}
+
+/* Ensure all project components take full width */
+.project-window-content > div {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* Override any fixed width containers from imported components */
+.project-window-content :global(.container),
+.project-window-content div[class*="container"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
 }
 
 /* Animations */
