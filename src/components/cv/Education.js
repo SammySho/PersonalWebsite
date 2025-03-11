@@ -16,7 +16,7 @@ const Education = () => {
         </div>
         <div className="cv-entry-content">
           <ul>
-            <li>Won a prestigious ESPRC funded Centre for Doctoral Training in Digital Health and Care.</li>
+            <li>One of eight to win a prestigious ESPRC funded Centre for Doctoral Training in Digital Health and Care.</li>
             <li>Created a computer vision pipeline for the predictive modelling of chemotherapy drugs and patient-derived ovarian cancer organoids.</li>
             <li>Main body of work focused on the development of predictive models of brain organoid development using computer vision and deep learning.</li>
             <li>Built software and applications to enable novel approaches for faster data annotation, model generation, and conclusions.</li>
@@ -34,7 +34,7 @@ const Education = () => {
         </div>
         <div className="cv-entry-content">
           <ul>
-            <li> MSc Individual Project - [65%] - Thesis focused on imputation methods for missing data in predicting sepsis diagnosis.</li>
+            <li>MSc Individual Project - [65%] - Thesis focused on Gaussian process imputation methods for missing data in predicting sepsis diagnosis.</li>
             <li>Artificial Intelligence Planning - [82%] - Experience in a group project conducting many experiments in cloud processing instances.</li>
             <li>Computer Vision - [79%] - Understanding biological and artificial vision systems and how their interpretation systems differ.</li>
             <li>Agents & Multi-Agent Systems - [88%] - Worked in a team designing a multi-agent system for the autonomy of marine vessels.</li>

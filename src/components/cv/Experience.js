@@ -19,7 +19,7 @@ const Experience = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className="cv-entry">
         <div className="cv-entry-header">
           <div>
@@ -30,6 +30,21 @@ const Experience = () => {
         <div className="cv-entry-content">
           <ul>
             <li>Over 400 hours of experience teaching computer science largely focused on A-levels and IGCSE. Comprehensive understanding of the theoretical fundamentals, broad programming language experience, and how to communicate ideas effectively to varying abilities.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="cv-entry">
+        <div className="cv-entry-header">
+          <div>
+            <h3 className="cv-entry-title">Firemind.</h3>
+            <h4 className="cv-entry-subtitle">Engineer</h4>
+          </div>
+          <span className="cv-entry-date">08/2019 – 09/2019</span>
+        </div>
+        <div className="cv-entry-content">
+          <ul>
+            <li>Primary responsibilities included creating computer vision solutions for customers through developing marker recognition systems to map space within a scene, for assessing flow of crowds in queuing systems.</li>
           </ul>
         </div>
       </div>
