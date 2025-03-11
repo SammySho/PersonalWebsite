@@ -61,14 +61,14 @@ const Projects = () => {
     const projects = [
         {
             title: 'Financial Modelling',
-            description: 'Advanced financial modelling tools for investment analysis and decision making, featuring backtesting capabilities and strategy visualization.',
-            thumbnail: '/images/financial-modelling-thumb.jpg',
+            description: 'A CI/CD pipeline for pulling stock data from Yahoo Finance, selecting a model and trading signals, backtesting the model, and visualising the results.',
+            thumbnail: '/images/stonks.png',
             component: FinancialModellingApp
         },
         {
             title: 'Interactive Data Visualization',
-            description: 'A showcase of interactive data visualization techniques using modern web technologies and real-time data processing.',
-            thumbnail: '/images/demo-project-thumb.jpg', // You'll need to add this image
+            description: 'A deep dive into understanding price fluctuations of rare earth minerals using alternative data sources.',
+            thumbnail: '/images/stonks.png', // You'll need to add this image
             component: DemoProject
         }
     ];
